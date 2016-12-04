@@ -3862,7 +3862,7 @@ function certssl {
 
 # Create Self-Signed SSL Certificate
 function creassl {
-	xterm -title "Create Self-Signed SSL Certificate" -e openssl req -subj '/CN=SEGURO/O=SEGURA/OU=SEGURA/C=US' -new -newkey rsa:2048 -days 365 -nodes -x509 -keyout /root/server.pem -out /$DUMP_PATH/server.pem # more details there https://www.openssl.org/docs/manmaster/apps/openssl.html
+	xterm -title "Create Self-Signed SSL Certificate" -e openssl req -subj '/CN=SEGURO/O=SEGURA/OU=SEGURA/C=US' -new -newkey rsa:2048 -days 365 -nodes -x509 -keyout /$DUMP_PATH/server.pem -out /$DUMP_PATH/server.pem # more details there https://www.openssl.org/docs/manmaster/apps/openssl.html
 	certssl
 }
 
