@@ -4374,7 +4374,8 @@ range $RANG_IP.100 $RANG_IP.250;
   \".png\" => \"image/png\",
   \".css\" => \"text/css\"
   )
-
+ 
+  accesslog.filename = \"$DUMP_PATH/access_log.log\"
 
   server.error-handler-404 = \"/\"
 
