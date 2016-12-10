@@ -3558,8 +3558,8 @@ function handshakelocation {
 				Host_MAC_loc=$(pyrit -r "$handshakeloc" analyze 2>&1 | grep "^#" | cut -d " " -f3 | tr '[:lower:]' '[:upper:]')
 				if [[ "$Host_MAC_loc" == *"$Host_MAC"* ]] && [[ "$Host_SSID_loc" == *"$Host_SSID"* ]]; then
 					if aircrack-ng $handshakeloc | grep -q "1 handshake"; then
-					  cp "$handshakeloc" $DUMP_PATH/$Host_MAC-01.cap
-					  certssl
+					    cp "$handshakeloc" $DUMP_PATH/$Host_MAC-01.cap
+					    certssl
 					else
 					echo -e $yellow "Corrupted handshake" $transparent
 					echo
@@ -3574,8 +3574,8 @@ function handshakelocation {
 						handshakelocation
 					else
 						if pyrit -r $handshakeloc analyze 2>&1 | sed -n /$(echo $Host_MAC | tr '[:upper:]' '[:lower:]')/,/^#/p | grep -vi "AccessPoint" | grep -qi "good,"; then
-						  cp "$handshakeloc" $DUMP_PATH/$Host_MAC-01.cap
-						  certssl
+						    cp "$handshakeloc" $DUMP_PATH/$Host_MAC-01.cap
+						    certssl
 						else
 							echo "Corrupted handshake"
 							sleep 2
