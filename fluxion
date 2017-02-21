@@ -1111,7 +1111,56 @@ function french {
     selection_1="Clients actifs"
     selection_2="Sélectionnez une cible. Pour relancer un scan, touche $red r$transparent"
 }
+function armenian {
+	header_setinterface="Ընտրեք Ինտերֆեյսը"
+	setinterface_error="WiFi ինթերֆեյսեր չեն գտնվել"
 
+	# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+	header_choosescan="Ընտրեք ալիքը"
+	choosescan_option_1="Բոլորը "
+	choosescan_option_2="Ընտրել ալիք(ներ)ը"
+	# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+	scanchan_option_1="Մեկ ալիք"
+	scanchan_option_2="Մի քանի ալիքներ"
+	# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+	header_scan="WiFi էկրան"
+	# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+	header_scanchan="Փնտրվում են թիրախները"
+	# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+	header_askAP="Ընտրեք հարձակման ոճը"
+	askAP_option_1="FakeAP - Hostapd ("$red"Առաջարկվում է)"
+	askAP_option_2="FakeAP - airbase-ng (Դանդաղ միացում)"
+	askAP_option_4="Bruteforce - (Handshake է հարկավոր)"
+	# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+	header_askauth="Գաղտնաբառի հաստատման մեթոդ"
+	askauth_option_1="Handshake ("$red"Առաջարկվում է)"
+	askauth_option_2="Wpa_supplicant(Սխալները շատ են)"
+	# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+	header_deauthforce="Handshake ստուգում"
+	deauthforce_option_1="aircrack-ng (Miss chance)"
+	# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+	header_deauthMENU="*Պահել Handshake֊ը*"
+	deauthMENU_option_1="Ստուգել handshake֊ը"
+	# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+	header_webinterface="Ընտրեք ձեր ոճը"
+	header_ConnectionRESET="Ընտրել մուտքային էջ"
+	# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+	general_back="Հետ"
+	general_error_1="Չի Գտնվել"
+	general_case_error="Չճշտված մուտք,կրկին փորձեք"
+	general_exitmode="Մաքում և անջատում"
+	general_exitmode_1="Անջատվում է մոնիտորային ինթերֆեյսը"
+	general_exitmode_2="Անջատվում է ինթերֆեյսը"
+	general_exitmode_3="Անջատվում է "$grey"forwarding of packets"
+	general_exitmode_4="Մաքրվում է "$grey"iptables"
+	general_exitmode_5="Վերականգնվում է "$grey"tput"
+	general_exitmode_6="Վերբեռնվում է "$grey"Network-Manager"
+	general_exitmode_7="Մաքրումը հաջողվեց!"
+	general_exitmode_8="Մերսի ախպերս"
+	# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+	selection_1="Ակտիվ Կլիենտներ"
+	selection_2="Նշեք, ստուգելու համար $red r$transparent"
+	}
 function english {
 	header_setinterface="Select an interface"
 	setinterface_error="There are no wireless cards, quit..."
